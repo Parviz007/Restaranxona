@@ -1,0 +1,1566 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.contener {
+  width: 100%;
+  background-color: #0c0b08;
+}
+.contener .log {
+  width: 100%;
+  height: 121px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Cormorant Upright;
+}
+.contener .log .box h1 {
+  font-size: 44px;
+  font-family: Cormorant Upright;
+}
+.contener .log .box2 {
+  display: flex;
+  gap: 20px;
+}
+.contener .log .box3 {
+  display: flex;
+  gap: 15px;
+}
+.contener .hero {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  color: red;
+  position: relative;
+  font-family: Cormorant Upright;
+  margin-bottom: 200px;
+}
+.contener .hero .position {
+  position: absolute;
+  left: 20px;
+  top: 300px;
+  transform: rotate(-0.25turn);
+  display: flex;
+  gap: 15px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.contener .hero .left {
+  padding: 100px;
+  border: solid 2px transparent;
+  width: 40%;
+  font-size: 16px;
+  color: #aaaaaa;
+}
+.contener .hero .left .chase {
+  font-size: 20px;
+  color: #ffffff;
+}
+.contener .hero .left p {
+  padding-bottom: 20px;
+}
+.contener .hero .left h2 {
+  font-size: 70px;
+  color: #dcca87;
+  padding-bottom: 20px;
+  font-family: Cormorant Upright;
+}
+.contener .hero .left button {
+  padding: 8px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcca87;
+  font-family: Cormorant Upright;
+}
+.contener .hero .rayt {
+  position: relative;
+  width: 45%;
+  border: solid transparent;
+}
+.contener .hero .rayt .bir {
+  width: 500px;
+  height: 550px;
+  background-color: transparent;
+  position: relative;
+  margin: 40px;
+  overflow: hidden;
+  border: solid transparent 2px;
+}
+.contener .hero .rayt .bir .boxlar1 {
+  width: 350px;
+  height: 350px;
+  background-color: #dcca87;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-animation: box1 5s infinite linear;
+          animation: box1 5s infinite linear;
+}
+.contener .hero .rayt .bir .boxlar2 {
+  width: 350px;
+  height: 350px;
+  background-color: #dcca87;
+  -webkit-animation: box2 5s infinite linear;
+          animation: box2 5s infinite linear;
+}
+.contener .hero .rayt .imgbox .imgaim1 {
+  position: absolute;
+  top: 0;
+  width: 460px;
+  margin: 20px;
+  -webkit-animation: img 1s 1s linear;
+          animation: img 1s 1s linear;
+  z-index: 2;
+}
+.contener .hero .rayt .imgbox .imgaim3 {
+  position: absolute;
+  width: 460px;
+  margin: 20px;
+  top: 0;
+  -webkit-animation: img3 3s 2s linear;
+          animation: img3 3s 2s linear;
+  z-index: 1;
+}
+.contener .hero .rayt .imgbox .imgaim2 {
+  position: absolute;
+  width: 460px;
+  margin: 20px;
+  top: 0;
+  -webkit-animation: img2 3s 3s linear;
+          animation: img2 3s 3s linear;
+  z-index: 0;
+}
+.contener .hero .rayt .sapn {
+  display: flex;
+  gap: 500px;
+  color: #ffffff;
+}
+.contener .hero .rayt .sapn .gold {
+  font-size: 20px;
+  color: #dcca87;
+  font-family: "Cormorant Upright";
+}
+.contener .Ractangel {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../foto/black.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.contener .Ractangel .G {
+  border: solid 2px transparent;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  background-size: cover;
+  z-index: 22;
+}
+.contener .Ractangel .G .GGG {
+  position: absolute;
+  z-index: -1;
+}
+.contener .Ractangel .G h1 {
+  font-size: 70px;
+  color: #dcca87;
+  font-family: Cormorant Upright;
+}
+.contener .Ractangel .G p {
+  color: #aaaaaa;
+  padding: 30px 0;
+}
+.contener .Ractangel .G button {
+  color: #0c0c0c;
+  padding: 10px 32px;
+  border: none;
+  background-color: #dcca87;
+  font-family: Cormorant Upright;
+}
+.contener .Ractangel .G .left {
+  border: solid 2px transparent;
+  text-align: right;
+  font-size: 16px;
+}
+.contener .Ractangel .G .urta {
+  border: solid 2px transparent;
+  width: 84px;
+  height: 703px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.contener .Ractangel .G .rayt {
+  border: solid 2px transparent;
+}
+.contener .Ractangel .G .rayt h1 {
+  text-align: left;
+  font-size: 70px;
+}
+.contener .book {
+  width: 100%;
+  padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.contener .book .soat {
+  position: absolute;
+  right: 150px;
+  top: -20px;
+}
+.contener .book .table {
+  width: 70%;
+  border: solid 2px rgb(61, 60, 60);
+  text-align: center;
+  box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 50px 0;
+}
+.contener .book .table h1 {
+  color: #dcca87;
+  font-size: 64px;
+  font-family: "Cormorant Upright";
+}
+.contener .book .table .res {
+  font-family: "Cormorant Upright";
+}
+.contener .book .table button {
+  width: 130px;
+  height: 44px;
+  background-color: #dcca87;
+  font-family: "Cormorant Upright";
+}
+.contener .book .table .inputtayp {
+  border: solid 2px transparent;
+  padding: 50px 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.contener .book .table .inputtayp .box {
+  width: 380px;
+  height: 50px;
+  border: 1px solid #aaaaaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  color: #aaaaaa;
+}
+.contener .book .table .inputtayp .box .chevron {
+  padding: 8px 10px;
+}
+.contener .book .table .inputtayp .box .chevron:hover i {
+  -webkit-animation: 1s infinite linear;
+          animation: 1s infinite linear;
+  padding-top: 15px;
+  color: azure;
+}
+.contener .Rectangel {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../foto/Mask\ Group.png);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.contener .Rectangel .hh2 {
+  transition: 0.5s all;
+}
+.contener .Rectangel .hh2 h2 {
+  margin: 100px;
+  color: #ffffff;
+  font-size: 64px;
+  font-family: "Cormorant Upright";
+  position: relative;
+}
+.contener .Rectangel .hh2 h2::before {
+  transition: 0.5s all;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+}
+.contener .Rectangel .hh2 h2:hover::before {
+  width: 100%;
+}
+.contener .Rectangel .hh2 .bir {
+  width: 290px;
+  text-align: center;
+}
+.contener .Rectangel .hh2 .ikki {
+  width: 320px;
+  text-align: center;
+}
+.contener .Rectangel img {
+  position: absolute;
+  top: 0;
+  left: 150px;
+}
+.contener .kubuk {
+  width: 100%;
+  border: solid 2px transparent;
+  text-align: center;
+  padding: 100px;
+}
+.contener .kubuk .kubukButton {
+  background-color: #dcca87;
+  font-size: 16px;
+  font-family: "Cormorant Upright";
+  border: none;
+  width: 136px;
+  height: 44px;
+  margin: 40px;
+}
+.contener .kubuk .menu {
+  font-size: 23px;
+  font-family: "Cormorant Upright";
+  color: #ffffff;
+}
+.contener .kubuk .menuh1 {
+  font-size: 64px;
+  font-family: "Cormorant Upright";
+  color: #dcca87;
+  padding-bottom: 50px;
+}
+.contener .kubuk .gibdad {
+  border: solid 2px transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contener .kubuk .gibdad .gib1 {
+  width: 400px;
+  border: solid 2px transparent;
+}
+.contener .kubuk .gibdad .gib1 h1 {
+  font-size: 45px;
+  color: #fff;
+  font-family: "Cormorant Upright";
+  padding: 30px;
+}
+.contener .kubuk .gibdad .gib1 .box {
+  border: solid 2px transparent;
+  color: rgb(248, 248, 248);
+  padding: 15px;
+}
+.contener .kubuk .gibdad .gib1 .box .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 15px 0;
+}
+.contener .kubuk .gibdad .gib1 .box .top span {
+  width: 119px;
+  height: 1px;
+  background-color: white;
+}
+.contener .kubuk .gibdad .gib1 .box .top .pgold {
+  text-align: left;
+  width: 180px;
+  color: #dcca87;
+  font-family: "Cormorant Upright";
+}
+.contener .kubuk .gibdad .gib1 .box .botton {
+  text-align: left;
+}
+.contener .kubuk .gibdad .gib1 .box .botton p {
+  color: #aaaaaa;
+}
+.contener .kubuk .gibdad .gib3 {
+  width: 400px;
+  border: solid 2px transparent;
+}
+.contener .kubuk .gibdad .gib3 h1 {
+  font-size: 45px;
+  color: #fff;
+  font-family: "Cormorant Upright";
+}
+.contener .kubuk .gibdad .gib3 .box {
+  border: solid 2px transparent;
+  color: rgb(248, 248, 248);
+  padding: 15px;
+}
+.contener .kubuk .gibdad .gib3 .box .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 15px 0;
+}
+.contener .kubuk .gibdad .gib3 .box .top span {
+  width: 119px;
+  height: 1px;
+  background-color: white;
+}
+.contener .kubuk .gibdad .gib3 .box .top .pgold {
+  text-align: left;
+  width: 180px;
+  color: #dcca87;
+  font-family: "Cormorant Upright";
+}
+.contener .kubuk .gibdad .gib3 .box .botton {
+  text-align: left;
+}
+.contener .kubuk .gibdad .gib3 .box .botton p {
+  color: #aaaaaa;
+}
+.contener .povor {
+  width: 100%;
+  padding: 55px;
+  background-image: url(../foto/black.png);
+  background-size: cover;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contener .povor .left {
+  display: flex;
+}
+.contener .povor .left .bir {
+  width: 640px;
+  height: 795px;
+  position: relative;
+  margin: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: solid transparent 2px;
+}
+.contener .povor .left .bir .imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contener .povor .left .bir .imgbox img {
+  z-index: 2;
+}
+.contener .povor .left .bir .boxlar1 {
+  width: 450px;
+  height: 450px;
+  background-color: #dcca87;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-animation: box3 5s infinite linear;
+          animation: box3 5s infinite linear;
+}
+.contener .povor .left .bir .boxlar2 {
+  width: 450px;
+  height: 450px;
+  background-color: #dcca87;
+  -webkit-animation: box4 5s infinite linear;
+          animation: box4 5s infinite linear;
+}
+.contener .povor .rayt .seri {
+  font-size: 23px;
+  font-family: "Cormorant Upright";
+  color: #ffffff;
+}
+.contener .povor .rayt p {
+  font-size: 23px;
+  font-family: "Cormorant Upright";
+  color: #aaaaaa;
+}
+.contener .povor .rayt .p {
+  padding: 60px 0;
+}
+.contener .povor .rayt h1 {
+  font-size: 55px;
+  font-family: "Cormorant Upright";
+  color: #dcca87;
+}
+.contener .povor .rayt .pgold {
+  font-size: 32px;
+  font-family: "Cormorant Upright";
+  color: #dcca87;
+}
+.contener .povor .rayt .potpis {
+  padding-top: 55px;
+}
+.contener .happy {
+  width: 100%;
+  border: solid transparent 2px;
+  text-align: center;
+  padding: 100px;
+  position: relative;
+}
+.contener .happy .soat4 {
+  position: absolute;
+  top: -50px;
+  right: 350px;
+}
+.contener .happy .dadtable .table {
+  font-size: 23px;
+  font-family: "Cormorant Upright";
+  color: #ffffff;
+}
+.contener .happy .dadtable .tableh1 {
+  font-size: 64px;
+  font-family: "Cormorant Upright";
+  color: #dcca87;
+}
+.contener .happy .happylebl {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  padding: 50px 250px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid transparent 2px;
+  gap: 25px;
+}
+.contener .happy .happylebl .box {
+  border: solid 2px transparent;
+  width: 600px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contener .happy .happylebl .box .left {
+  position: relative;
+}
+.contener .happy .happylebl .box .left .undow {
+  position: absolute;
+  bottom: -15px;
+  right: -19px;
+}
+.contener .happy .happylebl .box .rayt {
+  text-align: left;
+}
+.contener .happy .happylebl .box .rayt p {
+  color: #aaaaaa;
+  font-style: italic;
+  font-size: #ffffff;
+}
+.contener .happy .happylebl .box .rayt .vibir {
+  color: #dcca87;
+  font-family: "Cormorant Upright";
+  font-size: 30px;
+  padding: 10px 0;
+}
+.contener .happy .happylebl .box .rayt .vibir:hover {
+  -webkit-animation: vibir 1s;
+          animation: vibir 1s;
+  position: relative;
+}
+.contener .happy .happylebl .box .rayt .pp {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.contener .video {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../foto/Mask Group (1).png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contener .video .soat5 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+.contener .word {
+  padding: 150px;
+  background-size: cover;
+  border: solid 2px transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  background-image: url(../foto/black.png);
+}
+.contener .word .left {
+  text-align: left;
+  border: solid 2px transparent;
+  color: #fff;
+  font-size: 23px;
+  font-family: "Cormorant Upright";
+}
+.contener .word .left h1 {
+  font-size: 64px;
+  color: #dcca87;
+}
+.contener .word .left .urvin {
+  width: 700px;
+  height: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-top: 60px;
+}
+.contener .word .left .urvin .box {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.contener .word .left .urvin .box .raytob h3 {
+  padding: 10px 0;
+  color: #dcca87;
+  font-size: 23px;
+}
+.contener .word .left .urvin .box .raytob p {
+  color: #aaaaaa;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.contener .word .rayt {
+  position: relative;
+  border: solid 2px transparent;
+}
+.contener .word .rayt .g {
+  position: absolute;
+  bottom: 0;
+  left: -75px;
+}
+.contener .blogs {
+  width: 100%;
+  text-align: center;
+  border: solid transparent 2px;
+  color: #fff;
+  padding: 70px;
+  position: relative;
+}
+.contener .blogs .soat6 {
+  position: absolute;
+  bottom: 100px;
+  right: 92px;
+}
+.contener .blogs .view {
+  width: 136px;
+  height: 44px;
+  background-color: #dcca87;
+  font-family: "Cormorant Upright";
+  border: none;
+}
+.contener .blogs .pblogs {
+  color: #ffffff;
+  font-family: "Cormorant Upright";
+  font-size: 16px;
+}
+.contener .blogs .blagsh1 {
+  font-size: 64px;
+  font-family: "Cormorant Upright";
+  color: #dcca87;
+}
+.contener .blogs .cards {
+  display: flex;
+  border: solid transparent 2px;
+  justify-content: center;
+  gap: 30px;
+  text-align: left;
+  padding: 50px;
+  position: relative;
+}
+.contener .blogs .cards .box .top .may23 {
+  border: solid transparent 2px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 20px 0;
+  font-family: "Roboto", sans-serif;
+}
+.contener .blogs .cards .box .bottom h3 {
+  color: #dcca87;
+  font-family: "Cormorant Upright";
+  font-size: 32px;
+}
+.contener .blogs .cards .box .bottom P {
+  color: #aaaaaa;
+  font-size: 16px;
+  padding: 15px 0;
+  font-family: "Roboto", sans-serif;
+}
+.contener .blogs .cards .box .bottom .goldp {
+  color: #dcca87;
+  font-size: 16px;
+}
+.contener .recangle {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px;
+  border: solid transparent 2px;
+  background-image: url(../foto/black.png);
+  background-size: cover;
+  gap: 40px;
+}
+.contener .recangle .left {
+  width: 45%;
+  border: solid transparent 2px;
+  text-align: left;
+  padding: 200px;
+}
+.contener .recangle .left p {
+  font-size: 23px;
+  color: #ffffff;
+}
+.contener .recangle .left .lorem {
+  color: #aaaaaa;
+  font-family: "Roboto", sans-serif;
+  padding: 30px 0;
+  width: 650px;
+}
+.contener .recangle .left h1 {
+  font-size: 64px;
+  font-family: "Cormorant Upright";
+  color: #dcca87;
+}
+.contener .recangle .left button {
+  width: 136px;
+  height: 44px;
+  background-color: #dcca87;
+  font-family: "Cormorant Upright";
+  font-size: 16px;
+  border: none;
+}
+.contener .recangle .rayt {
+  width: 55%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border: solid transparent 2px;
+  gap: 30px;
+}
+.contener .recangle .rayt .box {
+  width: 302px;
+  height: 448px;
+  border: 2px solid rgba(220, 202, 135, 0.2);
+}
+.contener .recangle .rayt .box img {
+  width: 301px;
+  height: 447px;
+}
+.contener .final {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: grid;
+}
+.contener .final .top {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.contener .final .top .poition {
+  position: absolute;
+  top: 110px;
+  box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+  width: 1300px;
+  background: #0c0c0c;
+  border: 1px solid rgba(220, 202, 135, 0.2);
+  text-align: center;
+  padding: 60px;
+  font-family: "Cormorant Upright";
+}
+.contener .final .top .poition p {
+  color: #ffffff;
+  font-size: 23px;
+}
+.contener .final .top .poition h1 {
+  font-size: 64px;
+  color: #dcca87;
+  padding: 20px;
+}
+.contener .final .top .poition .roboto {
+  font-family: "Roboto", sans-serif;
+}
+.contener .final .top .poition .inp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+}
+.contener .final .top .poition .inp input {
+  width: 635px;
+  height: 60px;
+  background-color: #0c0c0c;
+  border: 1px solid #f5efdb;
+}
+.contener .final .top .poition .inp button {
+  width: 129px;
+  height: 44px;
+  background-color: #dcca87;
+  font-family: "Cormorant Upright";
+}
+.contener .final .bottom {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../foto/black.png);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.contener .final .bottom .Gerícht {
+  position: absolute;
+  padding: 100px;
+  color: #aaa;
+  border: solid transparent;
+}
+.contener .final .bottom .dadclas {
+  padding: 100px;
+  border: solid transparent;
+}
+.contener .final .bottom .dadclas .dadbox {
+  padding: 200px;
+  display: flex;
+  text-align: center;
+  gap: 100px;
+  border: solid transparent;
+}
+.contener .final .bottom .dadclas .dadbox .box p {
+  font-family: Open Sans;
+  padding: 20px;
+  color: #aaaaaa;
+  font-size: 16px;
+}
+.contener .final .bottom .dadclas .dadbox .box .pgold {
+  color: #fff;
+}
+.contener .final .bottom .dadclas .dadbox .box h3 {
+  font-size: 32px;
+  color: #f5efdb;
+  font-family: "Cormorant Upright";
+}
+.contener .final .bottom .dadclas .dadbox .box .gold {
+  font-family: "Cormorant Upright";
+  font-size: 64px;
+  color: #dcca87;
+}
+.contener .final .bottom .dadclas .dadbox .box .drend {
+  border: solid transparent;
+}
+.contener .final .bottom .dadclas .dadbox .box .drend ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+@-webkit-keyframes box1 {
+  0% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  25% {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  30% {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  50% {
+    position: absolute;
+    bottom: 36.5%;
+    right: 30%;
+  }
+  55% {
+    position: absolute;
+    bottom: 36.5%;
+    right: 30%;
+  }
+  75% {
+    position: absolute;
+    bottom: 36.5%;
+    right: 0%;
+  }
+  80% {
+    position: absolute;
+    bottom: 36.5%;
+    right: 0%;
+  }
+  95% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  100% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@keyframes box1 {
+  0% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  25% {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  30% {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  50% {
+    position: absolute;
+    bottom: 36.5%;
+    right: 30%;
+  }
+  55% {
+    position: absolute;
+    bottom: 36.5%;
+    right: 30%;
+  }
+  75% {
+    position: absolute;
+    bottom: 36.5%;
+    right: 0%;
+  }
+  80% {
+    position: absolute;
+    bottom: 36.5%;
+    right: 0%;
+  }
+  95% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  100% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+@-webkit-keyframes box2 {
+  0% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  30% {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  50% {
+    position: absolute;
+    top: 36.4%;
+    left: 30%;
+  }
+  55% {
+    position: absolute;
+    top: 36.4%;
+    left: 30%;
+  }
+  75% {
+    position: absolute;
+    top: 36.4%;
+    left: 0%;
+  }
+  80% {
+    position: absolute;
+    top: 36.4%;
+    left: 0%;
+  }
+  95% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes box2 {
+  0% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  30% {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  50% {
+    position: absolute;
+    top: 36.4%;
+    left: 30%;
+  }
+  55% {
+    position: absolute;
+    top: 36.4%;
+    left: 30%;
+  }
+  75% {
+    position: absolute;
+    top: 36.4%;
+    left: 0%;
+  }
+  80% {
+    position: absolute;
+    top: 36.4%;
+    left: 0%;
+  }
+  95% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@-webkit-keyframes box3 {
+  0% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  25% {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  30% {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  50% {
+    position: absolute;
+    bottom: 43.5%;
+    right: 30%;
+  }
+  55% {
+    position: absolute;
+    bottom: 43.5%;
+    right: 30%;
+  }
+  75% {
+    position: absolute;
+    bottom: 43.5%;
+    right: 0%;
+  }
+  80% {
+    position: absolute;
+    bottom: 43.5%;
+    right: 0%;
+  }
+  95% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  100% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+@keyframes box3 {
+  0% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  25% {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  30% {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  50% {
+    position: absolute;
+    bottom: 43.5%;
+    right: 30%;
+  }
+  55% {
+    position: absolute;
+    bottom: 43.5%;
+    right: 30%;
+  }
+  75% {
+    position: absolute;
+    bottom: 43.5%;
+    right: 0%;
+  }
+  80% {
+    position: absolute;
+    bottom: 43.5%;
+    right: 0%;
+  }
+  95% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  100% {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+@-webkit-keyframes box4 {
+  0% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  30% {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  50% {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+  }
+  55% {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+  }
+  75% {
+    position: absolute;
+    top: 46%;
+    left: 0%;
+  }
+  80% {
+    position: absolute;
+    top: 46%;
+    left: 0;
+  }
+  95% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes box4 {
+  0% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  30% {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  50% {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+  }
+  55% {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+  }
+  75% {
+    position: absolute;
+    top: 46%;
+    left: 0%;
+  }
+  80% {
+    position: absolute;
+    top: 46%;
+    left: 0;
+  }
+  95% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@-webkit-keyframes vibir {
+  0% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  17% {
+    left: 25px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  34% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  51% {
+    left: 15px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  68% {
+    left: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  85% {
+    left: 5px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes vibir {
+  0% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  17% {
+    left: 25px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  34% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  51% {
+    left: 15px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  68% {
+    left: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  85% {
+    left: 5px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contener .soat {
+    display: none;
+  }
+  .contener .log .box2 {
+    display: none;
+  }
+  .contener .log .box3 {
+    font-size: 12px;
+  }
+  .contener .hero .position {
+    display: none;
+  }
+  .contener .hero .left {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    display: grid;
+  }
+  .contener .hero .rayt {
+    display: none;
+  }
+  .contener .Ractangel {
+    height: 100%;
+    padding: 15px;
+  }
+  .contener .Ractangel .G {
+    height: 100%;
+    text-align: center;
+    display: grid;
+  }
+  .contener .Ractangel .G .GGG {
+    display: none;
+  }
+  .contener .Ractangel .G .left {
+    text-align: center;
+  }
+  .contener .Ractangel .G .left h1 {
+    font-size: 60px;
+  }
+  .contener .Ractangel .G .left p {
+    font-size: 13px;
+  }
+  .contener .Ractangel .G .urta {
+    display: none;
+  }
+  .contener .Ractangel .G .rayt {
+    text-align: center;
+  }
+  .contener .Ractangel .G .rayt h1 {
+    font-size: 60px;
+  }
+  .contener .Ractangel .G .rayt p {
+    font-size: 13px;
+  }
+  .contener .book .soat {
+    display: none;
+  }
+  .contener .book .table {
+    width: 100%;
+    text-align: center;
+  }
+  .contener .book .table h1 {
+    font-size: 60px;
+  }
+  .contener .book .table p {
+    font-size: 13px;
+  }
+  .contener .Rectangel {
+    width: 100%;
+    height: 100%;
+    padding: 50px 10px;
+  }
+  .contener .Rectangel img {
+    display: none;
+  }
+  .contener .Rectangel .hh2 h2 {
+    margin: 0;
+    text-align: left;
+    display: flex;
+    font-size: 50px;
+  }
+  .contener .kubuk {
+    padding: 15px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .contener .kubuk .menu {
+    font-size: 13px;
+  }
+  .contener .kubuk .menuh1 {
+    font-size: 45px;
+  }
+  .contener .kubuk .gibdad {
+    flex-wrap: wrap;
+  }
+  .contener .kubuk .gibdad .gib1 {
+    border: solid 1px silver;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+  }
+  .contener .kubuk .gibdad .gib2 {
+    display: none;
+  }
+  .contener .kubuk .gibdad .gib3 {
+    border: solid 1px silver;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+  }
+  .contener .povor {
+    text-align: center;
+  }
+  .contener .povor .left {
+    display: none;
+  }
+  .contener .povor .rayt p {
+    font-size: 16px;
+  }
+  .contener .povor .rayt h1 {
+    width: 350px;
+    font-size: 40px;
+  }
+  .contener .povor .rayt .seri {
+    font-size: 16px;
+  }
+  .contener .happy {
+    border: solid transparent 2px;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .contener .happy .soat4 {
+    display: none;
+  }
+  .contener .happy .dadtable {
+    padding: 20px 0px;
+  }
+  .contener .happy .dadtable .table {
+    font-size: 12px;
+  }
+  .contener .happy .dadtable .tableh1 {
+    font-size: 45px;
+  }
+  .contener .happy .happylebl {
+    padding: 5px;
+  }
+  .contener .happy .happylebl .box {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    text-align: center;
+    flex-wrap: wrap;
+    border: solid silver 2px;
+    border-radius: 25px;
+    height: 100%;
+    text-align: center;
+  }
+  .contener .happy .happylebl .box .left .undow {
+    display: none;
+  }
+  .contener .happy .happylebl .box .rayt {
+    text-align: center;
+  }
+  .contener .video {
+    height: 400px;
+  }
+  .contener .video img {
+    width: 100px;
+    height: 100px;
+  }
+  .contener .video .soat5 {
+    display: none;
+  }
+  .contener .word {
+    padding: 0;
+  }
+  .contener .word .left {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .contener .word .left .urvin {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+  }
+  .contener .word .left .urvin .box {
+    border: solid transparent;
+    text-align: left;
+  }
+  .contener .word .rayt {
+    display: none;
+  }
+  .contener .blogs {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .contener .blogs .soat6 {
+    display: none;
+  }
+  .contener .blogs .pblogs {
+    font-size: 16px;
+  }
+  .contener .blogs .blagsh1 {
+    width: 100%;
+    font-size: 50px;
+  }
+  .contener .blogs .cards {
+    padding: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .contener .blogs .cards .box {
+    width: 100%;
+    border: solid silver 2px;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .contener .blogs .cards .box .top img {
+    width: 100%;
+  }
+  .contener .blogs .cards .box .top .may23 {
+    padding: 0;
+  }
+  .contener .blogs .cards .box .bottom {
+    padding: 15px;
+    text-align: center;
+  }
+  .contener .blogs .cards .box .bottom h3 {
+    font-size: 25px;
+  }
+  .contener .blogs .cards .box .bottom p {
+    font-size: 14px;
+  }
+  .contener .recangle {
+    display: none;
+  }
+  .contener .final {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */

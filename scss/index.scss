@@ -1,0 +1,1444 @@
+@import "./mod";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contener {
+    width: 100%;
+    background-color: $background;
+
+    .log {
+        width: 100%;
+        height: 121px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: $font-size-16;
+        color: $color;
+        font-family: Cormorant Upright;
+
+        .box {
+            h1 {
+                font-size: 44px;
+                font-family: Cormorant Upright;
+            }
+        }
+
+        .box2 {
+            display: flex;
+            gap: 20px;
+        }
+        .box3 {
+            display: flex;
+            gap: 15px;
+        }
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        color: red;
+        position: relative;
+        font-family: Cormorant Upright;
+        margin-bottom: 200px;
+        .position {
+            position: absolute;
+            left: 20px;
+            top: 300px;
+            transform: rotate(-0.25turn);
+            display: flex;
+            gap: 15px;
+            color: $color;
+            font-size: 18px;
+        }
+        .left {
+            padding: 100px;
+            border: solid 2px transparent;
+            width: 40%;
+            font-size: $font-size-16;
+            color: $color-ceri;
+
+            .chase {
+                font-size: $font-size-20;
+                color: $color;
+            }
+            p {
+                padding-bottom: 20px;
+            }
+            h2 {
+                font-size: $font-size-70;
+                color: $color-gold;
+                padding-bottom: 20px;
+                font-family: Cormorant Upright;
+            }
+            button {
+                padding: 8px 32px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $color-gold;
+                font-family: Cormorant Upright;
+            }
+        }
+        .rayt {
+            position: relative;
+            width: 45%;
+            border: solid transparent;
+
+            .bir {
+                width: 500px;
+                height: 550px;
+                background-color: transparent;
+                position: relative;
+                margin: 40px;
+                overflow: hidden;
+                .boxlar1 {
+                    width: 350px;
+                    height: 350px;
+                    background-color: $color-gold;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    animation: box1 5s infinite linear;
+                }
+                .boxlar2 {
+                    width: 350px;
+                    height: 350px;
+                    background-color: $color-gold;
+                    animation: box2 5s infinite linear;
+                }
+                border: solid transparent 2px;
+            }
+            .imgbox {
+                .imgaim1 {
+                    position: absolute;
+                    top: 0;
+                    width: 460px;
+                    margin: 20px;
+                    animation: img 1s 1s linear;
+                    z-index: 2;
+                    // tuxum
+                }
+
+                .imgaim3 {
+                    position: absolute;
+                    width: 460px;
+                    margin: 20px;
+                    top: 0;
+                    animation: img3 3s 2s linear;
+                    z-index: 1;
+                    // tuxumi kaloon
+                }
+                .imgaim2 {
+                    position: absolute;
+                    width: 460px;
+                    margin: 20px;
+                    top: 0;
+                    animation: img2 3s 3s linear;
+                    z-index: 0;
+                    // mayi
+                }
+            }
+            .sapn {
+                display: flex;
+                gap: 500px;
+                color: $color;
+
+                .gold {
+                    font-size: 20px;
+                    color: $color-gold;
+                    font-family: "Cormorant Upright";
+                }
+            }
+        }
+    }
+    .Ractangel {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../foto/black.png);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color;
+        .G {
+            border: solid 2px transparent;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 65px;
+            background-size: cover;
+            z-index: 22;
+            .GGG {
+                position: absolute;
+                z-index: -1;
+            }
+            h1 {
+                font-size: $font-size-70;
+                color: $color-gold;
+                font-family: Cormorant Upright;
+            }
+            p {
+                color: $color-ceri;
+                padding: 30px 0;
+            }
+            button {
+                color: #0c0c0c;
+                padding: 10px 32px;
+                border: none;
+                background-color: $color-gold;
+                font-family: Cormorant Upright;
+            }
+
+            .left {
+                border: solid 2px transparent;
+                text-align: right;
+                font-size: $font-size-16;
+            }
+            .urta {
+                border: solid 2px transparent;
+                width: 84px;
+                height: 703px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+            }
+            .rayt {
+                border: solid 2px transparent;
+                h1 {
+                    text-align: left;
+                    font-size: $font-size-70;
+                }
+            }
+        }
+    }
+    .book {
+        width: 100%;
+        padding: 100px 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+
+        .soat {
+            position: absolute;
+            right: 150px;
+            top: -20px;
+        }
+        .table {
+            width: 70%;
+            border: solid 2px rgb(61, 60, 60);
+            text-align: center;
+            box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+            color: $color;
+            padding: 50px 0;
+
+            h1 {
+                color: $color-gold;
+                font-size: $font-size-64;
+                font-family: "Cormorant Upright";
+            }
+            .res {
+                font-family: "Cormorant Upright";
+            }
+            button {
+                width: 130px;
+                height: 44px;
+                background-color: $color-gold;
+                font-family: "Cormorant Upright";
+            }
+
+            .inputtayp {
+                border: solid 2px transparent;
+                padding: 50px 20px;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                .box {
+                    width: 380px;
+                    height: 50px;
+                    border: 1px solid $color-ceri;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 15px;
+                    color: $color-ceri;
+                    .chevron {
+                        padding: 8px 10px;
+                    }
+
+                    .chevron:hover {
+                        i {
+                            animation: 1s infinite linear;
+                            padding-top: 15px;
+                            color: azure;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Rectangel {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-image: url(../foto/Mask\ Group.png);
+        display: flex;
+        align-items: center;
+        position: relative;
+        .hh2 {
+            transition: 0.5s all;
+            h2 {
+                margin: 100px;
+                color: $color;
+                font-size: $font-size-64;
+                font-family: "Cormorant Upright";
+                position: relative;
+                // opacity: ;
+
+                &::before {
+                    transition: 0.5s all;
+                    content: "";
+                    display: block;
+                    width: 0%;
+                    height: 3px;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: #fff;
+                }
+                &:hover::before {
+                    width: 100%;
+                    // border-bottom: solid 4px;
+                }
+            }
+            .bir {
+                width: 290px;
+                text-align: center;
+            }
+            .ikki {
+                width: 320px;
+                text-align: center;
+            }
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 150px;
+        }
+    }
+    .kubuk {
+        width: 100%;
+        border: solid 2px transparent;
+        text-align: center;
+        padding: 100px;
+        .kubukButton {
+            background-color: $color-gold;
+            font-size: $font-size-16;
+            font-family: "Cormorant Upright";
+            border: none;
+            width: 136px;
+            height: 44px;
+            margin: 40px;
+        }
+        .menu {
+            font-size: 23px;
+            font-family: "Cormorant Upright";
+            color: $color;
+        }
+        .menuh1 {
+            font-size: $font-size-64;
+            font-family: "Cormorant Upright";
+            color: $color-gold;
+            padding-bottom: 50px;
+        }
+        .gibdad {
+            border: solid 2px transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .gib1 {
+                width: 400px;
+                border: solid 2px transparent;
+                h1 {
+                    font-size: 45px;
+                    color: #fff;
+                    font-family: "Cormorant Upright";
+                    padding: 30px;
+                }
+                .box {
+                    border: solid 2px transparent;
+                    color: rgb(248, 248, 248);
+                    padding: 15px;
+
+                    .top {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 24px;
+                        padding: 15px 0;
+                        span {
+                            width: 119px;
+                            height: 1px;
+                            background-color: white;
+                        }
+                        .pgold {
+                            text-align: left;
+                            width: 180px;
+                            color: $color-gold;
+                            font-family: "Cormorant Upright";
+                        }
+                    }
+
+                    .botton {
+                        text-align: left;
+                        p {
+                            color: $color-ceri;
+                        }
+                    }
+                }
+            }
+            .gib3 {
+                width: 400px;
+                border: solid 2px transparent;
+                h1 {
+                    font-size: 45px;
+                    color: #fff;
+                    font-family: "Cormorant Upright";
+                }
+                .box {
+                    border: solid 2px transparent;
+                    color: rgb(248, 248, 248);
+                    padding: 15px;
+
+                    .top {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 24px;
+                        padding: 15px 0;
+                        span {
+                            width: 119px;
+                            height: 1px;
+                            background-color: white;
+                        }
+                        .pgold {
+                            text-align: left;
+                            width: 180px;
+                            color: $color-gold;
+                            font-family: "Cormorant Upright";
+                        }
+                    }
+                    .botton {
+                        text-align: left;
+                        p {
+                            color: $color-ceri;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .povor {
+        width: 100%;
+        padding: 55px;
+        background-image: url(../foto/black.png);
+        background-size: cover;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .left {
+            display: flex;
+
+            .bir {
+                width: 640px;
+                height: 795px;
+                position: relative;
+                margin: 40px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                border: solid transparent 2px;
+                .imgbox {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        z-index: 2;
+                    }
+                }
+                .boxlar1 {
+                    width: 450px;
+                    height: 450px;
+                    background-color: $color-gold;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    animation: box3 5s infinite linear;
+                }
+                .boxlar2 {
+                    width: 450px;
+                    height: 450px;
+                    background-color: $color-gold;
+                    animation: box4 5s infinite linear;
+                }
+            }
+        }
+        .rayt {
+            .seri {
+                font-size: 23px;
+                font-family: "Cormorant Upright";
+                color: $color;
+            }
+            p {
+                font-size: 23px;
+                font-family: "Cormorant Upright";
+                color: $color-ceri;
+            }
+            .p {
+                padding: 60px 0;
+            }
+            h1 {
+                font-size: 55px;
+                font-family: "Cormorant Upright";
+                color: $color-gold;
+            }
+            .pgold {
+                font-size: 32px;
+                font-family: "Cormorant Upright";
+                color: $color-gold;
+            }
+            .potpis {
+                padding-top: 55px;
+            }
+        }
+    }
+    .happy {
+        width: 100%;
+        border: solid transparent 2px;
+        text-align: center;
+        padding: 100px;
+        position: relative;
+        .soat4 {
+            position: absolute;
+            top: -50px;
+            right: 350px;
+        }
+        .dadtable {
+            .table {
+                font-size: 23px;
+                font-family: "Cormorant Upright";
+                color: $color;
+            }
+            .tableh1 {
+                font-size: $font-size-64;
+                font-family: "Cormorant Upright";
+                color: $color-gold;
+            }
+        }
+        .happylebl {
+            color: #fff;
+            width: 100%;
+            display: flex;
+            padding: 50px 250px;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: solid transparent 2px;
+            gap: 25px;
+
+            .box {
+                border: solid 2px transparent;
+                width: 600px;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                // padding: 20px;
+                gap: 30px;
+                .left {
+                    position: relative;
+                    .undow {
+                        position: absolute;
+                        bottom: -15px;
+                        right: -19px;
+                    }
+                }
+                .rayt {
+                    p {
+                        color: $color-ceri;
+                        font-style: italic;
+                        font-size: $color;
+                    }
+
+                    .vibir {
+                        color: $color-gold;
+                        font-family: "Cormorant Upright";
+                        font-size: 30px;
+                        padding: 10px 0;
+                    }
+
+                    .vibir:hover {
+                        animation: vibir 1s;
+                        position: relative;
+                    }
+                    .pp {
+                        color: #fff;
+                        font-family: "Roboto", sans-serif;
+                    }
+
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .video {
+        width: 100%;
+        height: 80vh;
+        background-image: url("../foto/Mask\ Group\ \(1\).png");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .soat5 {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+    }
+
+    .word {
+        padding: 150px;
+        background-size: cover;
+        border: solid 2px transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 140px;
+        background-image: url(../foto/black.png);
+        .left {
+            text-align: left;
+            border: solid 2px transparent;
+            color: #fff;
+            font-size: 23px;
+            font-family: "Cormorant Upright";
+            h1 {
+                font-size: $font-size-64;
+                color: $color-gold;
+            }
+            .urvin {
+                width: 700px;
+                height: 280px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 60px;
+                padding-top: 60px;
+                .box {
+                    display: flex;
+                    gap: 40px;
+                    justify-content: center;
+                    align-items: center;
+                    .raytob {
+                        h3 {
+                            padding: 10px 0;
+                            color: $color-gold;
+                            font-size: 23px;
+                        }
+                        p {
+                            color: $color-ceri;
+                            font-family: "Roboto", sans-serif;
+                            font-size: $font-size-16;
+                        }
+                    }
+                }
+            }
+        }
+        .rayt {
+            position: relative;
+            border: solid 2px transparent;
+            .g {
+                position: absolute;
+                bottom: 0;
+                left: -75px;
+            }
+        }
+    }
+
+    .blogs {
+        width: 100%;
+        text-align: center;
+        border: solid transparent 2px;
+        color: #fff;
+        padding: 70px;
+        position: relative;
+        .soat6 {
+            position: absolute;
+            bottom: 100px;
+            right: 92px;
+        }
+        .view {
+            width: 136px;
+            height: 44px;
+            background-color: $color-gold;
+            font-family: "Cormorant Upright";
+            border: none;
+        }
+        .pblogs {
+            color: $color;
+            font-family: "Cormorant Upright";
+            font-size: $font-size-16;
+        }
+        .blagsh1 {
+            font-size: $font-size-64;
+            font-family: "Cormorant Upright";
+            color: $color-gold;
+        }
+        .cards {
+            display: flex;
+            border: solid transparent 2px;
+            justify-content: center;
+            gap: 30px;
+            text-align: left;
+            padding: 50px;
+            position: relative;
+
+            .box {
+                .top {
+                    .may23 {
+                        border: solid transparent 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        color: $color;
+                        padding: 20px 0;
+                        font-family: "Roboto", sans-serif;
+                    }
+                }
+
+                .bottom {
+                    h3 {
+                        color: $color-gold;
+                        font-family: "Cormorant Upright";
+                        font-size: 32px;
+                    }
+                    P {
+                        color: $color-ceri;
+                        font-size: $font-size-16;
+                        padding: 15px 0;
+                        font-family: "Roboto", sans-serif;
+                    }
+                    .goldp {
+                        color: $color-gold;
+                        font-size: $font-size-16;
+                    }
+                }
+            }
+        }
+    }
+    .recangle {
+        display: flex;
+        justify-content: center;
+        padding: 60px 0px;
+        border: solid transparent 2px;
+        background-image: url(../foto/black.png);
+        background-size: cover;
+        gap: 40px;
+        .left {
+            width: 45%;
+            border: solid transparent 2px;
+            text-align: left;
+            padding: 200px;
+            p {
+                font-size: 23px;
+                color: $color;
+            }
+
+            .lorem {
+                color: $color-ceri;
+                font-family: "Roboto", sans-serif;
+                padding: 30px 0;
+                width: 650px;
+            }
+            h1 {
+                font-size: $font-size-64;
+                font-family: "Cormorant Upright";
+                color: $color-gold;
+            }
+            button {
+                width: 136px;
+                height: 44px;
+                background-color: $color-gold;
+                font-family: "Cormorant Upright";
+                font-size: $font-size-16;
+                border: none;
+            }
+        }
+        .rayt {
+            width: 55%;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            border: solid transparent 2px;
+            gap: 30px;
+            .box {
+                width: 302px;
+                height: 448px;
+                border: 2px solid rgba(220, 202, 135, 0.2);
+                img {
+                    width: 301px;
+                    height: 447px;
+                }
+            }
+        }
+    }
+
+    .final {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: grid;
+
+        .top {
+            width: 100%;
+            height: 300px;
+            background-color: black;
+
+            display: flex;
+            justify-content: center;
+            .poition {
+                position: absolute;
+                top: 110px;
+                box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+                width: 1300px;
+
+                background: #0c0c0c;
+                border: 1px solid rgba(220, 202, 135, 0.2);
+                text-align: center;
+                padding: 60px;
+                font-family: "Cormorant Upright";
+                p {
+                    color: $color;
+                    font-size: 23px;
+                }
+                h1 {
+                    font-size: $font-size-64;
+                    color: $color-gold;
+                    padding: 20px;
+                }
+                .roboto {
+                    font-family: "Roboto", sans-serif;
+                }
+                .inp {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 50px;
+                    gap: 30px;
+                    input {
+                        width: 635px;
+                        height: 60px;
+                        background-color: #0c0c0c;
+                        border: 1px solid #f5efdb;
+                    }
+                    button {
+                        width: 129px;
+                        height: 44px;
+                        background-color: $color-gold;
+                        font-family: "Cormorant Upright";
+                    }
+                }
+            }
+        }
+        .bottom {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-image: url(../foto/black.png);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            .Gerícht {
+                position: absolute;
+                padding: 100px;
+                color: #aaa;
+                border: solid transparent;
+            }
+            .dadclas {
+                padding: 100px;
+
+                border: solid transparent;
+                .dadbox {
+                    padding: 200px;
+                    display: flex;
+                    text-align: center;
+                    gap: 100px;
+                    border: solid transparent;
+                    .box {
+                        p {
+                            font-family: Open Sans;
+                            padding: 20px;
+                            color: $color-ceri;
+                            font-size: $font-size-16;
+                        }
+                        .pgold {
+                            color: #fff;
+                        }
+                        h3 {
+                            font-size: 32px;
+                            color: #f5efdb;
+                            font-family: "Cormorant Upright";
+                        }
+                        .gold {
+                            font-family: "Cormorant Upright";
+                            font-size: $font-size-64;
+                            color: $color-gold;
+                        }
+                        .drend {
+                            border: solid transparent;
+                            ul {
+                                display: flex;
+                                gap: 20px;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes box1 {
+    0% {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    25% {
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+    }
+    30% {
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+    }
+    50% {
+        position: absolute;
+        bottom: 36.5%;
+        right: 30%;
+    }
+    55% {
+        position: absolute;
+        bottom: 36.5%;
+        right: 30%;
+    }
+    75% {
+        position: absolute;
+        bottom: 36.5%;
+        right: 0%;
+    }
+    80% {
+        position: absolute;
+        bottom: 36.5%;
+        right: 0%;
+    }
+    95% {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    100% {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@keyframes box2 {
+    0% {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+    30% {
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+    50% {
+        position: absolute;
+        top: 36.4%;
+        left: 30%;
+    }
+    55% {
+        position: absolute;
+        top: 36.4%;
+        left: 30%;
+    }
+    75% {
+        position: absolute;
+        top: 36.4%;
+        left: 0%;
+    }
+    80% {
+        position: absolute;
+        top: 36.4%;
+        left: 0%;
+    }
+    95% {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes box3 {
+    0% {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    25% {
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+    }
+    30% {
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+    }
+    50% {
+        position: absolute;
+        bottom: 43.5%;
+        right: 30%;
+    }
+    55% {
+        position: absolute;
+        bottom: 43.5%;
+        right: 30%;
+    }
+    75% {
+        position: absolute;
+        bottom: 43.5%;
+        right: 0%;
+    }
+    80% {
+        position: absolute;
+        bottom: 43.5%;
+        right: 0%;
+    }
+    95% {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    100% {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@keyframes box4 {
+    0% {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+    30% {
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+    50% {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+    }
+    55% {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+    }
+    75% {
+        position: absolute;
+        top: 46%;
+        left: 0%;
+    }
+    80% {
+        position: absolute;
+        top: 46%;
+        left: 0;
+    }
+    95% {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes vibir {
+    0% {
+        left: 0;
+        animation-timing-function: ease-out;
+    }
+    17% {
+        left: 25px;
+        animation-timing-function: ease-in;
+    }
+    34% {
+        left: 0;
+        animation-timing-function: ease-out;
+    }
+    51% {
+        left: 15px;
+        animation-timing-function: ease-in;
+    }
+    68% {
+        left: 0px;
+        animation-timing-function: ease-out;
+    }
+    85% {
+        left: 5px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+// ------------------375----------------------------------------------
+@media screen and (max-width: 375px) {
+    .contener {
+        .soat {
+            display: none;
+        }
+        .log {
+            .box2 {
+                display: none;
+            }
+            .box3 {
+                font-size: 12px;
+            }
+        }
+        .hero {
+            .position {
+                display: none;
+            }
+            .left {
+                padding: 0;
+                text-align: center;
+                width: 100%;
+                display: grid;
+            }
+            .rayt {
+                display: none;
+            }
+        }
+
+        .Ractangel {
+            height: 100%;
+            padding: 15px;
+
+            .G {
+                height: 100%;
+                .GGG {
+                    display: none;
+                }
+                text-align: center;
+                display: grid;
+                .left {
+                    text-align: center;
+
+                    h1 {
+                        font-size: 60px;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+                .urta {
+                    display: none;
+                }
+
+                .rayt {
+                    text-align: center;
+                    h1 {
+                        font-size: 60px;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .book {
+            // border: solid red 2px;
+
+            .soat {
+                display: none;
+            }
+            .table {
+                width: 100%;
+                text-align: center;
+
+                h1 {
+                    font-size: 60px;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+        .Rectangel {
+            width: 100%;
+            height: 100%;
+            padding: 50px 10px;
+            img {
+                display: none;
+            }
+
+            .hh2 {
+                h2 {
+                    margin: 0;
+                    text-align: left;
+                    display: flex;
+                    font-size: 50px;
+                }
+            }
+        }
+        .kubuk {
+            padding: 15px;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 0;
+            .menu {
+                font-size: 13px;
+            }
+            .menuh1 {
+                font-size: 45px;
+            }
+            .gibdad {
+                .gib1 {
+                    border: solid 1px silver;
+                    background-color: rgb(0, 0, 0);
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 25px;
+                }
+                flex-wrap: wrap;
+                .gib2 {
+                    display: none;
+                }
+
+                .gib3 {
+                    border: solid 1px silver;
+                    background-color: rgb(0, 0, 0);
+
+                    border-radius: 25px;
+                }
+            }
+        }
+
+        .povor {
+            text-align: center;
+
+            .left {
+                display: none;
+            }
+            .rayt {
+                p {
+                    font-size: 16px;
+                }
+                h1 {
+                    width: 350px;
+                    font-size: 40px;
+                }
+                .seri {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .happy {
+            border: solid transparent 2px;
+
+            .soat4 {
+                display: none;
+            }
+            .dadtable {
+                padding: 20px 0px;
+                .table {
+                    font-size: 12px;
+                }
+                .tableh1 {
+                    font-size: 45px;
+                }
+            }
+            .happylebl {
+                padding: 5px;
+
+                .box {
+                    padding: 10px 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+
+                    display: grid;
+                    text-align: center;
+                    flex-wrap: wrap;
+                  
+                    border: solid silver 2px;
+                    border-radius: 25px;   
+                    height: 100%;
+                    text-align: center;
+                    .left {
+                        .undow {
+                            display: none;
+                        }
+                    }
+                    .rayt {
+                        text-align: center;
+                    }
+                }
+            }
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        .video {
+            height: 400px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            .soat5 {
+                display: none;
+            }
+        }
+
+        .word {
+            padding: 0;
+
+            .left {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+
+                .urvin {
+                    padding: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    gap: 15px;
+                    justify-content: center;
+                    .box {
+                        border: solid transparent;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .rayt {
+                display: none;
+            }
+        }
+        .blogs{
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+         
+            padding: 0;
+            .soat6{
+                display: none;
+            }
+            .pblogs{
+                font-size: 16px;
+            }
+            .blagsh1{
+                width: 100%;
+                font-size: 50px;
+        
+            }
+            .cards{
+ 
+                padding: 15px;
+                gap: 10px;
+                flex-wrap: wrap;
+                
+                .box{
+                    width: 100%;
+                    border: solid silver 2px;
+                    border-radius: 25px;    
+                    overflow: hidden;
+                   
+                    .top{
+                       
+                        img{
+                            width: 100%;
+                        
+                        }
+                        .may23{
+                            padding: 0;
+                        } 
+                    }
+                    .bottom{
+                        padding: 15px;
+                       text-align: center; 
+                       h3{
+                        font-size: 25px;
+                       }
+                       p{
+                        font-size: 14px;
+                       }
+                    }
+                }
+                
+                
+            }
+        }
+        .recangle{
+                display: none;
+        }
+        .final{
+            width: 100%;
+            height: 100%;
+        }
+
+
+    }
+}
